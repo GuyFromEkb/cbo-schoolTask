@@ -1,0 +1,59 @@
+.promo {
+    height: 688px;
+    margin-top: 32px;
+    padding: 120px 0 0 0;
+    background: url(../img/promo/bg.jpg) right top / auto no-repeat, linear-gradient(0deg, rgba(245, 246, 248, 0.32), rgba(245, 246, 248, 0.32)), #FFFFFF;
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        max-width: 624px;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    &__cours {
+        font-weight: 600;
+        font-size: 16px;
+        color: $light-green;
+    }
+    &__title {}
+    &__subtitle {}
+    &__data-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    &__data {
+        display: flex;
+        gap: 8px;
+    }
+    &__btn {
+        display: flex;
+        gap: 16px;
+    }
+    &__btn-green {
+        width: 232px;
+        height: 64px;
+    }
+    &__btn-white {
+        // font-weight: 500;
+        // font-size: 18px;
+        // line-height: 28px;
+        height: 64px;
+        width: 265px;
+        svg {
+            margin-right: 12px;
+        }
+    }
+}
+
+.container {}
+
+.title {}
+
+.subtitle {}
+
+.btn {}

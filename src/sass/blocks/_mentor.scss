@@ -1,0 +1,57 @@
+.mentor {
+    padding-top: 80px;
+    padding-bottom: 105px;
+    &__title {
+        margin-top: 20px;
+    }
+    &__subtitle-2 {
+        margin-top: 20px;
+        color: #667085;
+    }
+    &__wrap {
+        position: relative;
+        margin-top: 74px;
+        margin-left: 99px;
+        overflow: hidden;
+    }
+    &__overlay {
+        right: 0;
+        z-index: 20;
+        position: absolute;
+        height: 100%;
+        width: 142px;
+        // width: 100%;
+        opacity: 0.5;
+        background: linear-gradient(to left, rgb(255, 255, 255) 30%, rgba(25, 0, 255, 0) 100%), linear-gradient(to left, rgb(255, 255, 255) 30%, rgba(25, 0, 255, 0) 100%);
+    }
+}
+
+.m-card {
+    &__slider {
+        transition: all 1s;
+        // display: flex;
+        gap: 48px;
+        // width: calc(264px * 8); 816   312
+    }
+    &__item {
+        width: 264px;
+    }
+    &__img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    &__title {
+        margin-top: 24px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 32px;
+        color: $black;
+    }
+    &__descr {
+        margin-top: 4px;
+        font-size: 16px;
+        line-height: 24px;
+        color: $gray;
+    }
+}

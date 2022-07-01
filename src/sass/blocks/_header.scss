@@ -1,0 +1,32 @@
+.header {
+    a {
+        color: $dark-green;
+        text-decoration: none;
+    }
+    &__wrap {
+        padding-top: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        height: 48px;
+        width: auto;
+        object-fit: scale-down;
+    }
+    &__nav {
+        list-style-type: none;
+        display: flex;
+        gap: 32px;
+    }
+    &__link {
+        a {
+            font-weight: 500;
+            font-size: 14px;
+        }
+    }
+    &__phone {
+        font-weight: 600;
+        font-size: 24px;
+    }
+}

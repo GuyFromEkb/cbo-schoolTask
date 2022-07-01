@@ -1,0 +1,12 @@
+.btn {
+    border-radius: 8px;
+    &_dark-green {
+        background: #045C5E;
+        color: #fff;
+    }
+    &_white {
+        background: #FFFFFF;
+        font-weight: 500;
+        font-size: 18px;
+    }
+}

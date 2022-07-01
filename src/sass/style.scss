@@ -1,0 +1,44 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import 'base/variables';
+@import 'base/mixins';
+* {
+    font-family: 'Inter', sans-serif;
+    color: $black;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    // background: gray;
+    // position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1248px;
+    margin: 0 auto;
+    padding: 0 3px;
+}
+
+.new-line {
+    display: block;
+}
+
+.bold_600 {
+    font-weight: 600;
+    color: inherit;
+}
+
+.col_green {
+    color: #0C999C;
+}
+
+@import 'blocks/header';
+@import 'blocks/titles';
+@import 'blocks/_btn';
+@import 'blocks/promo';
+@import 'blocks/salle';
+@import 'blocks/system-sale';
+@import 'blocks/mentor';

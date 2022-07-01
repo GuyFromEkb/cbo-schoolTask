@@ -1,0 +1,23 @@
+.title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: $black;
+    &_salle {
+        font-weight: 500;
+        font-size: 32px;
+        text-transform: uppercase;
+        line-height: 72px;
+    }
+}
+
+.subtitle {
+    color: $gray;
+    font-weight: 600;
+    font-size: 16px;
+    &_promo {
+        font-weight: 400;
+        font-size: 20px;
+        color: #667085;
+    }
+}
