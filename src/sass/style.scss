@@ -9,6 +9,21 @@
     padding: 0;
 }
 
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+button {
+    outline: none!important;
+    transition-duration: .5s;
+    border: none;
+    // &:active {
+    //     transform: scale(1.02)
+    // }
+}
+
 body {
     // background: gray;
     // position: relative;
@@ -31,8 +46,17 @@ body {
     color: inherit;
 }
 
+.bold_700 {
+    font-weight: 700;
+    color: inherit;
+}
+
 .col_green {
     color: #0C999C;
+}
+
+.col_light-green {
+    color: #66E0E2;
 }
 
 @import 'blocks/header';
@@ -42,3 +66,6 @@ body {
 @import 'blocks/salle';
 @import 'blocks/system-sale';
 @import 'blocks/mentor';
+@import 'blocks/incrase';
+@import 'blocks/learn';
+@import 'blocks/admin';

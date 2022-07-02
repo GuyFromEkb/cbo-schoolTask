@@ -39,21 +39,24 @@
         height: 64px;
     }
     &__btn-white {
-        // font-weight: 500;
-        // font-size: 18px;
-        // line-height: 28px;
         height: 64px;
         width: 265px;
         svg {
+            margin-top: -2px;
+            transition-duration: .5s;
             margin-right: 12px;
+        }
+        &:hover {
+            color: #0C999C;
+            svg {
+                stroke: #0C999C;
+            }
+        }
+        &:active {
+            color: #045C5E;
+            svg {
+                stroke: #045C5E;
+            }
         }
     }
 }
-
-.container {}
-
-.title {}
-
-.subtitle {}
-
-.btn {}

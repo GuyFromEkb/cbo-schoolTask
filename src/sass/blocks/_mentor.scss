@@ -1,6 +1,6 @@
 .mentor {
-    padding-top: 80px;
-    padding-bottom: 105px;
+    padding-top: 73px;
+    padding-bottom: 107px;
     &__title {
         margin-top: 20px;
     }
@@ -20,7 +20,6 @@
         position: absolute;
         height: 100%;
         width: 142px;
-        // width: 100%;
         opacity: 0.5;
         background: linear-gradient(to left, rgb(255, 255, 255) 30%, rgba(25, 0, 255, 0) 100%), linear-gradient(to left, rgb(255, 255, 255) 30%, rgba(25, 0, 255, 0) 100%);
     }
@@ -29,9 +28,7 @@
 .m-card {
     &__slider {
         transition: all 1s;
-        // display: flex;
         gap: 48px;
-        // width: calc(264px * 8); 816   312
     }
     &__item {
         width: 264px;
