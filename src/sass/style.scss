@@ -37,6 +37,10 @@ body {
     margin: 0 auto;
 }
 
+body.active {
+    overflow: hidden;
+}
+
 .foot {
     margin-top: 200px;
     height: 200px;
@@ -68,6 +72,10 @@ body {
     color: #0C999C;
 }
 
+.col_a-green {
+    color: #14b4b7;
+}
+
 .col_light-green {
     color: #66E0E2;
 }
@@ -91,3 +99,4 @@ body {
 @import 'blocks/book';
 @import 'blocks/request';
 @import 'blocks/footer';
+@import 'blocks/modal';

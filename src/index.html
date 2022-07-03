@@ -71,14 +71,14 @@
 
                 </div>
                 <div class="promo__btn">
-                    <button class="promo__btn-green btn btn_green">Записаться на курс</button>
-                    <button class="promo__btn-white btn btn_white">
+                    <!-- <a href=""></a> -->
+                    <button data-modal-btn class="promo__btn-green btn btn_green">Записаться на курс</button>
+                    <a href="#howLearn" class="promo__btn-white btn btn_white">
                         <svg width="24" height="24" stroke="#2B3541" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M12 8H12.01" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M11 12H12V16H13" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        Подробнее о курсе</button>
+                        </svg> Подробнее о курсе</a>
                 </div>
 
             </div>
@@ -322,7 +322,7 @@
                     <img class="i-note__img" src="img/incrase/note-1.png" alt="">
                     <div class="i-note__title">Для руководителей отдела продаж или тех, кто только хочет стать РОПом и улучшить результаты команды.</div>
                     <div class="i-note__descr">Построите эффективную систему, автоматизируете бизнес-процессы и выстроите KPI, чтобы легко выполнять даже амбициозные планы продаж.</div>
-                    <a class="i-note__btn" href="">
+                    <a class="i-note__btn" href="#admin-anchor">
                         <p>Курс «Руководитель отдела продаж в цифровом мире»</p>
                         <div class="i-note__arrow"></div>
                     </a>
@@ -334,7 +334,7 @@
                     <img class="i-note__img" src="img/incrase/note-2.png" alt="">
                     <div class="i-note__title">Для тех, кто управляет коммерческим отделом или делает карьеру коммерческого директора и ищет новые пути развития продаж в компании.</div>
                     <div class="i-note__descr">Определите слабые места стратегии и тактики продаж, найдите новые точки роста и научитесь быстро адаптироваться к внешним вызовам, чтобы зарабатывать даже в кризис.</div>
-                    <a class="i-note__btn" href="">
+                    <a id="go-director" class="i-note__btn" href="#director-anchor">
                         <p>Курс «Коммерческий директор в цифровом мире»</p>
                         <div class="i-note__arrow"></div>
                     </a>
@@ -356,7 +356,7 @@
 
     <section class="learn">
         <div class="container">
-            <h3 class="learn__title title">Как проходит обучение</h3>
+            <h3 id="howLearn" class="learn__title title">Как проходит обучение</h3>
             <div class="learn__wrap">
 
 
@@ -382,7 +382,7 @@
 
             </div>
 
-            <button class=" btn btn_green learn__btn">Записаться на курс</button>
+            <button data-modal-btn class=" btn btn_green learn__btn">Записаться на курс</button>
             <div class="learn__descr">
                 На протяжении всего обучения вы будете работать над своим проектом и в результате <span class="bold_600 col_green"> получите готовую к реализации стратегию развития или новую систему работы отдела продаж</span> в вашей компании.
             </div>
@@ -393,7 +393,7 @@
 
         <div class="container">
             <div class="subtitle">Профессия</div>
-            <h3 class="title title_salle admin__title">Руководитель отдела продаж</h3>
+            <h3 id="admin-anchor" class="title title_salle admin__title">Руководитель отдела продаж</h3>
             <img src="img/admin/bg.jpg" alt="bg-photo" class="admin__bg">
 
             <div class="admin__wrap">
@@ -461,7 +461,7 @@
                                     <li class="level__list-item">Формировать рабочий календарь;</li>
                                     <li class="level__list-item">Организовывать эффективную командную дискуссию.</li>
                                 </ul>
-                                <button class="btn btn_green level__btn">Записаться на курс</button>
+                                <button data-modal-btn class="btn btn_green level__btn">Записаться на курс</button>
 
                             </div>
 
@@ -672,7 +672,7 @@
 
         <div class="container">
             <div class="subtitle">Профессия</div>
-            <h3 class="title title_salle admin__title">Коммерческий директор в цифровом мире</h3>
+            <h3 id="director-anchor" class="title title_salle admin__title">Коммерческий директор в цифровом мире</h3>
             <img src="img/admin/bg-dir.jpg" alt="bg-photo" class="admin__bg">
 
             <div class="admin__wrap">
@@ -740,7 +740,7 @@
                                     <li class="level__list-item">Формировать рабочий календарь;</li>
                                     <li class="level__list-item">Организовывать эффективную командную дискуссию.</li>
                                 </ul>
-                                <button class="btn btn_green level__btn">Записаться на курс</button>
+                                <button data-modal-btn class="btn btn_green level__btn">Записаться на курс</button>
 
                             </div>
 
@@ -950,7 +950,7 @@
                                     <li class="level__list-item">Разрабатывать сценарий проведения стратегической сессии;</li>
                                     <li class="level__list-item">Формировать финансовый план-продаж.</li>
                                 </ul>
-                                <button class="btn btn_green level__btn">Записаться на курс</button>
+                                <button data-modal-btn class="btn btn_green level__btn">Записаться на курс</button>
 
                             </div>
 
@@ -1455,6 +1455,76 @@
 
     </footer>
 
+
+    <div class="modal">
+
+        <div class="modal__overlay">
+
+        </div>
+
+        <div id="modal-form" class="modal__window">
+            <div class="modal__close">
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="modal__title title">Записаться на курс</div>
+            <div class="modal__subtitle">Заполните форму, мы свяжемся с вами в ближайшее время.</div>
+
+            <div class="modal__form">
+
+                <form action="#" class="form">
+
+                    <div class="form__row">
+                        <p>Ваше имя</p>
+                        <input name="name" required placeholder="Укажите ваше полное ФИО" type="text">
+                    </div>
+
+
+                    <div class="form__row">
+                        <p>Email</p>
+                        <input name="email" required placeholder="example@email.com" type="email">
+                    </div>
+
+
+                    <div class="form__row">
+                        <p>Телефон для связи</p>
+                        <input class="form__phone" name="phone" placeholder="+7" type="text">
+                    </div>
+
+
+                    <div class="form__row">
+                        <p>Название компании (опционально)</p>
+                        <input placeholder="Укажите название вашей компании" type="text">
+                    </div>
+
+                    <div class="form__policy">* — заполняя форму, вы соглашаетесь с <a href="#"><span class="col_a-green">политикой обработки персональных данных</span></a></div>
+                    <button class="form__btn btn_green">Отправить запрос</button>
+
+
+
+                </form>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+        <div id="modal-tnh" class="modal__window  modal__thanks">
+            <div class="modal__close">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="modal__title title">Спасибо за заявку</div>
+
+        </div>
+
+
+    </div>
 
 
 

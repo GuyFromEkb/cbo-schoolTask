@@ -198,7 +198,106 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+    //modals
 
+    const modalBtn = document.querySelectorAll("[data-modal-btn]")
+    const overlay = document.querySelector(".modal__overlay")
+    const modalWindowForm = document.querySelector("#modal-form")
+    const modalWindowALL = document.querySelectorAll(".modal__window")
+    const modalClose = document.querySelectorAll(".modal__close")
+
+    modalClose.forEach(item => {
+        item.addEventListener('click', modalOff);
+    });
+
+    modalBtn.forEach(btn => {
+
+        btn.addEventListener("click", () => {
+            modalOn(modalWindowForm);
+
+        })
+
+    })
+
+    function modalOn(modal) {
+        document.body.classList.add('active');
+        overlay.classList.add('active');
+        modal.classList.add('active');
+
+        document.addEventListener('click', (e) => {
+            if (e.target == overlay) {
+                modalOff();
+            }
+        })
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                modalOff();
+            }
+        });
+
+
+    }
+
+    function modalOff() {
+        document.body.classList.remove('active');
+        overlay.classList.remove('active');
+        modalWindowALL.forEach(modal => {
+            modal.classList.remove('active');
+        })
+
+
+
+    }
+
+
+    //form
+
+    const form = document.querySelectorAll('form')
+    const modalWindowTnh = document.querySelector("#modal-tnh")
+
+    form.forEach(form => {
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            modalOff();
+            modalOn(modalWindowTnh);
+
+            form.reset();
+
+            setTimeout(() => {
+                if (modalWindowTnh.classList.contains('active')) {
+                    modalOff();
+                }
+
+            }, 6000)
+
+
+
+
+            console.log('submit')
+        })
+
+
+    })
+
+    // Плавный scroll
+
+    const anchors = document.querySelectorAll('a[href*="#"]');
+    for (let anchor of anchors) {
+        anchor.addEventListener("click", function(e) {
+            e.preventDefault();
+
+            const blockID = anchor.getAttribute("href").substring(1);
+            if (blockID) {
+                document.getElementById(blockID).scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+            } else {
+                return false
+            }
+        });
+    }
 
 
 

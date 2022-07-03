@@ -39,10 +39,16 @@
         height: 64px;
     }
     &__btn-white {
+        // color: #0C999C;
+        transition-duration: .5s;
+        color: $black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 64px;
         width: 265px;
         svg {
-            margin-top: -2px;
+            // margin-top: -2px;
             transition-duration: .5s;
             margin-right: 12px;
         }
