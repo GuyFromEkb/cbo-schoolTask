@@ -1,0 +1,105 @@
+.level {
+    border-top: 1px solid #F5F5F5;
+    padding-top: 48px;
+    padding-bottom: 64px;
+    display: grid;
+    grid-template-columns: 368px 1fr;
+    gap: 64px;
+    &__left {}
+    &__right {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__date {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 32px;
+        color: #2B3541;
+    }
+    &__date-longer {
+        margin-top: 8px;
+        color: #80899E;
+    }
+    &__list-title {
+        margin-top: 24px;
+        font-weight: 600;
+    }
+    &__list {
+        margin-top: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__list-item {
+        color: #80899E;
+    }
+    &__btn {
+        margin-top: 24px;
+        width: 232px;
+        height: 60px;
+    }
+}
+
+.modul {
+    padding: 24px 24px 28px 24px;
+    // height: 180px;
+    background: #FFFFFF;
+    border: 1px solid #E4E7EC;
+    border-radius: 16px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 18px;
+        color: #2B3541;
+    }
+    &__mentor-wraper {
+        display: flex;
+        gap: 8px;
+    }
+    &__mentor {
+        padding: 0 8px 0 4px;
+        background: #E7F0FF;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        &_gray {
+            background: #F5F8FA;
+        }
+    }
+    &__mentor-photo {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+    }
+    &__mentor-name {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    &__descr {
+        margin-top: 21px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #80899E;
+    }
+    &__footer {
+        margin-top: 34px;
+        display: flex;
+        gap: 24px;
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            color: #80899E;
+        }
+    }
+    &__day,
+    &__hour,
+    &__time {
+        display: flex;
+        gap: 8px;
+    }
+}

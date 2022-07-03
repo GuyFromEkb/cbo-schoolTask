@@ -24,11 +24,24 @@ button {
     // }
 }
 
+form {
+    input {
+        outline: none!important;
+    }
+}
+
 body {
     // background: gray;
     // position: relative;
     max-width: 1440px;
     margin: 0 auto;
+}
+
+.foot {
+    margin-top: 200px;
+    height: 200px;
+    background-color: gray;
+    // margin-top: 200px;
 }
 
 .container {
@@ -69,3 +82,12 @@ body {
 @import 'blocks/incrase';
 @import 'blocks/learn';
 @import 'blocks/admin';
+@import 'blocks/plane';
+@import 'blocks/step';
+@import 'blocks/level';
+@import 'blocks/learn-team';
+@import 'blocks/form';
+@import 'blocks/recomend';
+@import 'blocks/book';
+@import 'blocks/request';
+@import 'blocks/footer';

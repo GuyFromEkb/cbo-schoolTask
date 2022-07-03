@@ -1,0 +1,20 @@
+.step {
+    &__header {
+        padding-bottom: 20px;
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {}
+    &__content {
+        // padding-bottom: 64px;
+        // border-top: 1px solid #F5F5F5;
+        // padding-top: 24px;
+        transition: all .7s;
+        overflow: hidden;
+        // max-height: 0;
+        // margin-top: 24px;
+        // background: yellow;
+    }
+    &__wrap {}
+}

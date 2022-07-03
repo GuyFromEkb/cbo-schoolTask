@@ -1,0 +1,18 @@
+.plane {
+    // height: 176px;
+    background: #FFFFFF;
+    &__wrap {
+        padding: 64px 0;
+        // overflow: hidden;
+        // height: 176px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__content {
+        transition: all .5s;
+        overflow: hidden;
+        // max-height: 0; scr
+    }
+}

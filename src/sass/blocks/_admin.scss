@@ -1,7 +1,51 @@
 .admin {
+    padding-bottom: 32px;
     margin-top: 64px;
     padding-top: 64px;
-    height: 300px;
+    // height: 300px;
     background: linear-gradient(0deg, rgba(245, 246, 248, 0.32), rgba(245, 246, 248, 0.32)), #FFFFFF;
     &__title {}
+    &__bg {
+        margin-top: 38px;
+        width: 1200px;
+        height: auto;
+        object-fit: cover;
+    }
+    &__wrap {
+        border-bottom: 1px solid #E4E4E4;
+        padding-bottom: 40px;
+        margin-top: 72px;
+        display: flex;
+        gap: 24px;
+    }
+}
+
+.a-item {
+    width: 384px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__img {
+        width: 80px;
+        height: auto;
+        object-fit: scale-down;
+    }
+    &__title {
+        margin-top: 24px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: $black;
+    }
+    &__descr {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #4D566A;
+    }
+}
+
+.bold {
+    &_700 {}
 }
