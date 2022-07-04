@@ -9,56 +9,62 @@ document.addEventListener('DOMContentLoaded', () => {
 
     (function() {
 
+        if (window.screen.width < 768) {
 
-        const sliderInner = document.querySelector('.m-card__slider');
-        const sliderOne = document.querySelector('.m-card__item');
-        const sliderWidth = sliderOne.offsetWidth;
-        const styleGap = parseInt(getComputedStyle(sliderInner).gap);
-        const sliderAll = Array.from(document.querySelectorAll('.m-card__item'));
-        const width = -styleGap + (sliderWidth + styleGap) * sliderAll.length
-        let COUNT_SLIDER_ON_SITE = 4;
-
-        if (window.screen.width < 992) {
-            COUNT_SLIDER_ON_SITE = 2;
-        } else if (window.screen.width < 1399) {
-            COUNT_SLIDER_ON_SITE = 3;
         } else {
-            COUNT_SLIDER_ON_SITE = 4;
+
+            const sliderInner = document.querySelector('.m-card__slider');
+            const sliderOne = document.querySelector('.m-card__item');
+            const sliderWidth = sliderOne.offsetWidth;
+            const styleGap = parseInt(getComputedStyle(sliderInner).gap);
+            const sliderAll = Array.from(document.querySelectorAll('.m-card__item'));
+            const width = -styleGap + (sliderWidth + styleGap) * sliderAll.length
+            let COUNT_SLIDER_ON_SITE = 4;
+
+            if (window.screen.width < 992) {
+                COUNT_SLIDER_ON_SITE = 2;
+            } else if (window.screen.width < 1399) {
+                COUNT_SLIDER_ON_SITE = 3;
+            } else {
+                COUNT_SLIDER_ON_SITE = 4;
+            }
+            console.log(COUNT_SLIDER_ON_SITE);
+
+            sliderInner.style.width = width + "px";
+            sliderInner.style.display = "flex";
+
+
+            let scrollToPx = 0;
+            sliderInner.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                let buffScroll = 0;
+
+                if (e.deltaY > 0) {
+                    buffScroll += (sliderWidth + styleGap);
+                } else {
+                    buffScroll -= (sliderWidth + styleGap);
+                }
+
+
+                if (scrollToPx + buffScroll > 0) {
+
+                } else if (scrollToPx + buffScroll < -((sliderAll.length - COUNT_SLIDER_ON_SITE) * (sliderWidth + styleGap))) {
+
+                } else {
+                    scrollToPx += buffScroll;
+                }
+
+
+
+
+
+                sliderInner.style.transform = `translateX(${scrollToPx}px)`;
+
+
+            })
+
         }
-        console.log(COUNT_SLIDER_ON_SITE);
 
-        sliderInner.style.width = width + "px";
-        sliderInner.style.display = "flex";
-
-
-        let scrollToPx = 0;
-        sliderInner.addEventListener('wheel', (e) => {
-            e.preventDefault();
-            let buffScroll = 0;
-
-            if (e.deltaY > 0) {
-                buffScroll += (sliderWidth + styleGap);
-            } else {
-                buffScroll -= (sliderWidth + styleGap);
-            }
-
-
-            if (scrollToPx + buffScroll > 0) {
-
-            } else if (scrollToPx + buffScroll < -((sliderAll.length - COUNT_SLIDER_ON_SITE) * (sliderWidth + styleGap))) {
-
-            } else {
-                scrollToPx += buffScroll;
-            }
-
-
-
-
-
-            sliderInner.style.transform = `translateX(${scrollToPx}px)`;
-
-
-        })
 
 
 
