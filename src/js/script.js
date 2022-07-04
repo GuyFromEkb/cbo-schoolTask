@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 COUNT_SLIDER_ON_SITE = 4;
             }
-            console.log(COUNT_SLIDER_ON_SITE);
 
             sliderInner.style.width = width + "px";
             sliderInner.style.display = "flex";
@@ -352,6 +351,19 @@ document.addEventListener('DOMContentLoaded', () => {
     })();
 
 
+    //burger menu
+    (function() {
+
+        document.querySelector('.header__burg-menu').addEventListener('click', () => {
+            document.querySelector('.header__burg-menu').classList.toggle('active');
+            document.querySelector('.header__nav').classList.toggle('active');
+
+        })
+
+
+
+
+    })();
 
 
 
