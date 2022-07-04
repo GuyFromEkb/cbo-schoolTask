@@ -101,5 +101,10 @@
     &__time {
         display: flex;
         gap: 8px;
+        img {
+            width: auto;
+            height: 24px;
+            object-fit: cover;
+        }
     }
 }

@@ -16,6 +16,7 @@
     "gulp-cli": "^2.3.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^6.2.0",
+    "gulp-minify": "^3.1.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.53.0"

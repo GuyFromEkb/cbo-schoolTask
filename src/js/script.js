@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //slider
 
+
+
     (function() {
 
 
@@ -14,7 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const styleGap = parseInt(getComputedStyle(sliderInner).gap);
         const sliderAll = Array.from(document.querySelectorAll('.m-card__item'));
         const width = -styleGap + (sliderWidth + styleGap) * sliderAll.length
-        const COUNT_SLIDER_ON_SITE = 4;
+        let COUNT_SLIDER_ON_SITE = 4;
+        if (window.screen.width < 1399) {
+            COUNT_SLIDER_ON_SITE = 3;
+        } else {
+            COUNT_SLIDER_ON_SITE = 4;
+        }
 
         sliderInner.style.width = width + "px";
         sliderInner.style.display = "flex";
@@ -228,10 +235,10 @@ document.addEventListener('DOMContentLoaded', () => {
         //modals
 
         const modalBtn = document.querySelectorAll("[data-modal-btn]")
-        const overlay = document.querySelector(".modal__overlay")
+        const overlay = document.querySelector(".main-modal__overlay")
         const modalWindowForm = document.querySelector("#modal-form")
-        const modalWindowALL = document.querySelectorAll(".modal__window")
-        const modalClose = document.querySelectorAll(".modal__close")
+        const modalWindowALL = document.querySelectorAll(".main-modal__window")
+        const modalClose = document.querySelectorAll(".main-modal__close")
 
         modalClose.forEach(item => {
             item.addEventListener('click', modalOff);

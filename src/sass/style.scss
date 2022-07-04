@@ -30,9 +30,7 @@ form {
     }
 }
 
-body {
-    // background: gray;
-    // position: relative;
+.main-body {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -41,14 +39,7 @@ body.active {
     overflow: hidden;
 }
 
-.foot {
-    margin-top: 200px;
-    height: 200px;
-    background-color: gray;
-    // margin-top: 200px;
-}
-
-.container {
+.main-container {
     max-width: 1248px;
     margin: 0 auto;
     padding: 0 3px;
@@ -100,3 +91,4 @@ body.active {
 @import 'blocks/request';
 @import 'blocks/footer';
 @import 'blocks/modal';
+@import 'blocks/media';

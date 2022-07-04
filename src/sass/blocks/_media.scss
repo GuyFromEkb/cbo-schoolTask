@@ -1,19 +1,152 @@
-// @media (max-width: 1200px) {
-//     body {
-//         max-width: 1200px;
-//     }
-//     .container {
-//         max-width: 960px;
-//     }   
-// }
-// @media (max-width: 992px) {
-//     body {
-//         max-width: 992px;
-//     }
-//     .container {
-//         max-width: 760px;
-//     }
-// }
+@media (max-width: 1399px) {
+    .main-body {
+        max-width: 1200px;
+    }
+    .main-container {
+        max-width: 960px;
+    }
+    .promo {
+        height: auto;
+        padding: 50px 0;
+        background: url(../img/promo/bg.jpg) right top / auto 432px no-repeat, linear-gradient(0deg, rgba(245, 246, 248, 0.32), rgba(245, 246, 248, 0.32)), #FFFFFF;
+        &__btn-green {
+            width: 200px;
+            height: 50px;
+        }
+        &__btn-white {
+            width: 250px;
+            height: 50px;
+        }
+    }
+    .s-card {
+        &_title {
+            padding: 0;
+        }
+    }
+    .system-salle {
+        &__wrap {
+            grid-template-columns: 450px 1fr;
+            gap: 50px;
+        }
+    }
+    .mentor {
+        &__wrap {
+            margin-top: 50px;
+            margin-left: 9px;
+        }
+    }
+    .m-card {
+        &__item {
+            width: 240px;
+        }
+        &__title {
+            font-size: 19px;
+        }
+        &__descr {
+            font-size: 15px;
+        }
+    }
+    .increase {
+        &__title {
+            max-width: none;
+            text-align: center;
+        }
+        &__subtitle {
+            text-align: center;
+        }
+        &__notes {}
+    }
+    .i-note {
+        width: 440px;
+        &__title {
+            font-size: 18px;
+            line-height: normal;
+        }
+        &__descr {
+            font-size: 15px;
+        }
+        &__btn {
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    .l-item {
+        &__title {
+            text-align: center;
+        }
+    }
+    .level {
+        gap: 20px;
+    }
+    .modul {
+        &__title {
+            font-size: 16px;
+        }
+        &:last-child {
+            .modul__header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    }
+    .learn-team {
+        &__block {
+            padding: 0;
+            padding-top: 32px;
+        }
+    }
+    .recomend {
+        padding: 50px 100px;
+    }
+    .b-item {
+        &__title {
+            font-size: 25px;
+        }
+    }
+    .main-footer {
+        padding: 50px 0;
+        &__wrap {
+            flex-direction: column-reverse;
+            gap: 20px;
+        }
+        &__wrap-left {
+            display: flex;
+            justify-content: center;
+        }
+        &__wrap-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        &__footer {
+            justify-content: center;
+        }
+    }
+    // 
+    // 
+    .title {
+        font-size: 35px;
+        &_salle {
+            font-size: 28px;
+        }
+    }
+    .subtitle {
+        font-size: 18px;
+    }
+    .btn {}
+}
+
+@media (max-width: 992px) {
+    .main-body {
+        max-width: 992px;
+    }
+    .main-container {
+        max-width: 760px;
+    }
+}
+
 // @media (max-width: 768px) {
 //     body {
 //         max-width: 768px;

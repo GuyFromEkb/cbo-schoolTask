@@ -1,4 +1,4 @@
-.footer {
+.main-footer {
     padding: 96px 0;
     &__wrap {
         display: flex;
@@ -31,7 +31,6 @@
             color: #005958;
         }
     }
-    &__wrap-right {}
     &__tel {
         font-weight: 600;
         font-size: 32px;
