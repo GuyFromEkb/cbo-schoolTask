@@ -17,11 +17,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const sliderAll = Array.from(document.querySelectorAll('.m-card__item'));
         const width = -styleGap + (sliderWidth + styleGap) * sliderAll.length
         let COUNT_SLIDER_ON_SITE = 4;
-        if (window.screen.width < 1399) {
+
+        if (window.screen.width < 992) {
+            COUNT_SLIDER_ON_SITE = 2;
+        } else if (window.screen.width < 1399) {
             COUNT_SLIDER_ON_SITE = 3;
         } else {
             COUNT_SLIDER_ON_SITE = 4;
         }
+        console.log(COUNT_SLIDER_ON_SITE);
 
         sliderInner.style.width = width + "px";
         sliderInner.style.display = "flex";
